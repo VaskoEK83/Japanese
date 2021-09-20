@@ -1,0 +1,21 @@
+/**
+ * CONTENTS
+ *
+ * LAYOUT
+ * Elements.............Rules for the container/body and items.
+ */
+
+
+
+
+
+/*------------------------------------*\
+  #ELEMENTS
+\*------------------------------------*/
+
+h1 {
+    text-align: center;
+    padding: 2rem;
+    margin-top: 1rem;
+}
+

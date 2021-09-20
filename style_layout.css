@@ -1,0 +1,54 @@
+/**
+ * CONTENTS
+ *
+ * LAYOUT
+ * Elements.............Rules for the container/body and items.
+ * Modifiers............Media queries for the layout.
+ */
+
+
+
+
+
+/*------------------------------------*\
+  #ELEMENTS
+\*------------------------------------*/
+
+body {
+    display:      grid;
+    grid:
+                  "nav" auto
+                  "sidebar1" auto
+                  "main" auto
+                  "sidebar2" auto
+                  "footer" auto /
+                  100%;
+}
+
+    nav           { grid-area: nav; }
+    #sidebar1     { grid-area: sidebar1; }
+    main          { grid-area: main; }
+    #sidebar2     { grid-area: sidebar2; }
+    footer        { grid-area: footer; }
+
+
+
+
+    
+/*------------------------------------*\
+  #MODIFIERS
+\*------------------------------------*/
+  
+@media only screen and (min-width: 1280px) {
+    body {
+        grid: 
+                  "nav nav nav" 58px
+                  "sidebar1 main sidebar2" calc(100vh - 118px)
+                  "footer footer footer" 50px /
+                  20vw 1fr 20vw;
+        grid-gap: 5px;
+    }
+}
+
+  
+  

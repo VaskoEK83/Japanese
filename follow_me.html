@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kövess minket</title>
+    <!--add favicon-->
+    <link rel="shortcut icon" type="image/x-icon" href="assets/japanflagforfavicon.jpg">
+    <!--bootstrap-->
+    <link rel="stylesheet" href="scss/bootstrap.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <!-- html + css -->
+    <link rel="stylesheet" type="text/css" href="style_base.css">
+    <link rel="stylesheet" type="text/css" href="style_follow_layout.css">
+    <link rel="stylesheet" type="text/css" href="style_follow_components.css">
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-md navbar-light bg-light" style="background-color: #02475E !important">
+        <div class="container-fluid">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="index.html">Főoldal</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="architecture.html">Építészet</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="foods.html">Ételek</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="lifestyle.html">Életmód</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="cute_characters.html">Cuki karakterek</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Kövess minket</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+    </nav>
+
+    <main>
+      <div id="newsletter_box">
+        <h1>Szeretnél további érdekes tartalmakat olvasni?</h1>
+        <p>Iratkozz fel hírlevelünkre!</p>
+        <form action="http://localhost/feldolgoz.php" method="POST">
+          <label for="name">Név:</label><br>
+          <input type="text" name="Name" id="name" value="" required onfocus="setBg(this)" onblur="setBgBack(this)"><br><br>
+
+          <label for="email">E-mail cím:</label><br>
+          <input type="email" name="Email" id="email" value="" required onfocus="setBg(this)" onblur="setBgBack(this)"><br><br>
+
+          <input type="checkbox" name="Accept" value="" id="accept_box"> <label id="text_for_accept_box">Elolvastam és elfogadom az <a href="#">Adatvédelmi tájékoztatóban</a> foglaltakat.</label><br><br>
+          
+          <button id="sign_up_button">Feliratkozom</button>
+        </form>
+      </div>
+    </main>
+
+    <footer>
+        <p>Készítette: Vaskó Eszter Klára, 2021</p>
+    </footer>
+
+    <script>
+      
+      function setBg(x) {
+        x.style.backgroundColor = "#fcffa4";
+      }
+
+      function setBgBack(x) {
+        x.style.backgroundColor = "white";
+      }
+
+    </script>
+
+</body>
+</html>

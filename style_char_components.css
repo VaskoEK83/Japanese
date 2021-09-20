@@ -1,0 +1,91 @@
+/**
+ * CONTENTS
+ *
+ * BODY
+ *
+ * MAIN
+ */
+
+
+
+
+
+/*------------------------------------*\
+  #BODY
+\*------------------------------------*/
+
+body {
+    background-color: #F1F3F4;
+}
+
+
+
+
+
+/*------------------------------------*\
+  #MAIN
+\*------------------------------------*/
+
+        #container_for_characters {
+            margin: 0px auto;
+            max-width: 95vw;
+        }
+
+            .item {
+                background-color: #512B58;
+            }
+
+                #container_for_characters p {
+                    text-align: justify;
+                    color: #F1F3F4;
+                    font-size: 2vh;
+                    padding: 10px;
+                }
+
+                    #container_for_characters img {
+                        float: left;
+                        padding: 10px;
+                    }
+
+                    #Aggretsuko, #Gudetama {
+                        width: 250px;
+                    }
+
+                    #Pikachu, #HelloKitty {
+                        width: 180px;
+                    }
+
+
+
+@media only screen and (min-width: 768px) {
+        #container_for_characters {
+            margin: 30px auto;
+            max-width: 75vw;
+        }
+
+                #container_for_characters p {
+                    font-size: 1.4vh;
+                }
+
+                    #Aggretsuko, #Gudetama {
+                        max-width: 25vw;
+                    }
+                    
+                    #Pikachu, #HelloKitty {
+                        max-width: 12vw;
+                    }
+}
+
+@media only screen and (min-width: 1200px) {
+        #container_for_characters {
+            margin: 30px auto;
+            max-width: 65vw;
+            font-size: 1vw;
+        }
+
+                #container_for_characters p {
+                    font-size: 1.7vh;
+                }
+}
+
+

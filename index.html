@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Japán - Főoldal</title>
+    <!--add favicon-->
+    <link rel="shortcut icon" type="image/x-icon" href="assets/japanflagforfavicon.jpg">
+    <!--bootstrap-->
+    <link rel="stylesheet" href="scss/bootstrap.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <!-- html + css -->
+    <link rel="stylesheet" type="text/css" href="style_base.css">
+    <link rel="stylesheet" type="text/css" href="style_layout.css">
+    <link rel="stylesheet" type="text/css" href="style_components.css">
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-md navbar-light bg-light" style="background-color: #02475E !important">
+      <div class="container-fluid">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Főoldal</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="architecture.html">Építészet</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="foods.html">Ételek</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="lifestyle.html">Életmód</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="cute_characters.html">Cuki karakterek</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="follow_me.html">Kövess minket</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <aside id="sidebar1">
+      <h1>Japán</h1>
+      <ul>
+        <li>Hivatalos elnevezés: <strong>Japán</strong></li>
+        <li>Főváros: <strong>Tokió</strong></li>
+        <li>Államforma: <strong>alkotmányos monarchia</strong></li>
+        <li>Hivatalos nyelv: <strong>japán</strong></li>
+        <li>Császár: <strong>Naruhito</strong></li>
+        <li>Miniszterelnök: <strong>Szuga Josihide</strong></li>
+        <li>Területe: <strong>377 915 km2</strong></li>
+        <li>Becsült lakossága: <strong>126,2 millió (2018)</strong></li>
+        <li>Pénzegysége: <strong>Jen (YEN)</strong></li>
+        <li>Ország hívószáma: <strong>+81</strong></li>
+        <li>Vallás: <strong>sintó, buddhizmus, keresztény</strong></li>
+        <li>Nemzeti zászlaja: <strong>egy fehér téglalap, közepén egy bíborvörös körrel</strong></li>
+      </ul>
+      <div id="div_for_flag">
+        <img src="assets/flag.jpg" alt="flag of Japan">
+      </div>
+    </aside>
+    
+    <main>
+        <h2>Japán</h2>
+        <div id="slydeshow_container">
+            <div id="myCarousel" class="carousel slide carousel-fade" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                  <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                  <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                  <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                  <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                </div>
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="assets/dia1.jpg" class="d-block w-100" alt="dia1">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="assets/dia2.jpg" class="d-block w-100" alt="dia2">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="assets/dia3.jpg" class="d-block w-100" alt="dia3">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="assets/dia4.jpg" class="d-block w-100" alt="dia4">
+                  </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </div>
+    </main>
+
+    <aside id="sidebar2">
+      <ul>
+          <li>Éghajlata: <strong>változatos, északon kontinentális, déli-délnyugati részein nedves szubtrópusi</strong></li>
+          <li>Legmagasabb pontja: <strong>Fudzsi-hegy (3776m)</strong></li>
+          <li>Legalacsonyabb pontja: <strong>Hacsirógata (-4 m)</strong></li>
+      </ul>
+      <div id="div_for_map">
+          <img src="assets/japan_map.JPG" alt="map of Japan">
+      </div>
+    </aside>
+
+    <footer>
+        <p>Készítette: Vaskó Eszter Klára, 2021</p>
+    </footer>
+
+</body>
+</html>

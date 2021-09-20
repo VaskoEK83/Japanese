@@ -1,0 +1,85 @@
+/**
+ * CONTENTS
+ *
+ * LAYOUT
+ * Elements.............Rules for the container and items
+ * Modifiers............Media queries for the layout.
+ *
+ * WHITESPACES
+ * Whitespaces..........Whitespaces between items.
+ */
+
+
+
+
+
+/*------------------------------------*\
+  #ELEMENTS
+\*------------------------------------*/
+
+#container_for_characters {
+    display:        grid;
+    grid:
+                    "item_1" auto
+                    "item_2" auto
+                    "item_3" auto
+                    "item_4" auto /
+                    100%;
+    }
+    
+    #div_for_item_1      { grid-area: item_1; }
+    #div_for_item_2      { grid-area: item_2; }
+    #div_for_item_3      { grid-area: item_3; }
+    #div_for_item_4      { grid-area: item_4; }
+    #div_for_item_5      { grid-area: item_5; }
+    
+
+        
+/*------------------------------------*\
+    #MODIFIERS
+\*------------------------------------*/
+    
+@media only screen and (min-width: 768px) {
+
+    body {
+        width: 100vw;
+        height: 100vh;
+        position: relative;
+    }
+
+        nav {
+            height: 58px;
+        }
+        
+        main {
+            height: calc(100vh - 108px);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+            #container_for_characters {
+                grid: 
+                        "item_1 item_1 item_2" 25vh
+                        "item_4 item_5 item_2" 25vh
+                        "item_4 item_3 item_3" 25vh /
+                        1fr 1fr 1fr;
+            }
+                
+        footer {
+            position: fixed;
+            bottom: 0px;
+        }
+}
+      
+
+ 
+
+
+
+/*------------------------------------*\
+  #WHITESPACES
+\*------------------------------------*/
+  
+    #container_for_characters {
+        grid-gap: 5px;
+    }

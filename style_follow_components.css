@@ -1,0 +1,57 @@
+/**
+ * CONTENTS
+ *
+ * MAIN
+ */
+
+
+
+
+
+/*------------------------------------*\
+  #MAIN
+\*------------------------------------*/
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    /* from https://css-tricks.com/apply-a-filter-to-a-background-image/ */
+    background-image: linear-gradient(black, black), url('assets/japan_mountain.jpg');
+    background-size: cover;
+    background-blend-mode: saturation;
+    background-position: right;
+}
+
+    #newsletter_box {
+        border: 2px solid #02475E;
+        padding: 20px;
+        border-radius: 10px;
+        margin-left: .5rem;
+        margin-right: .5rem;
+        background-color: rgba(228, 166, 219, 0.5);
+        color: #F1F3F4;
+    }
+
+        #newsletter_box h1 {
+            font-size: 18px;
+        }
+
+            input {
+                border: none;
+            }
+
+                #text_for_accept_box a {
+                    color: #FEFECC;
+                }
+
+            button {
+                padding: 8px;
+                border-radius: 10px;
+                background-color: #FEFECC;
+                color: #512B58;
+                box-shadow: 2px 2px #512B58;
+            }
+
+

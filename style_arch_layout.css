@@ -1,0 +1,88 @@
+/**
+ * CONTENTS
+ *
+ * LAYOUT
+ * Elements.............Rules for the container/body and items.
+ * Modifiers............Media queries for the layout.
+ */
+
+
+
+
+
+/*------------------------------------*\
+  #ELEMENTS
+\*------------------------------------*/
+
+                main #container_for_pics {
+                    display: grid;
+                    grid:   "pic1" auto
+                            "pic2" auto
+                            "pic3" auto
+                            "pic4" auto
+                            "pic5" auto
+                            "pic6" auto
+                            "pic7" auto
+                            "pic8" auto /
+                            100%
+                }
+
+                    #pic1 { grid-area: pic1;}
+                    #pic2 { grid-area: pic2;}
+                    #pic3 { grid-area: pic3;}
+                    #pic4 { grid-area: pic4;}
+                    #pic5 { grid-area: pic5;}
+                    #pic6 { grid-area: pic6;}
+                    #pic7 { grid-area: pic7;}
+                    #pic8 { grid-area: pic8;}
+
+
+
+
+
+/*------------------------------------*\
+  #MODIFIERS
+\*------------------------------------*/
+
+@media only screen and (min-width: 768px) {
+    body {
+        width: 100vw;
+        height: 100vh;
+        position: relative;
+    }
+
+        nav {
+            height: 58px;
+        }
+        
+        main {
+            width: 100vw;
+            height: calc(100vh - 108px);
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+            main #section_for_pics_in_galerie {
+                max-width: 80vw;
+                max-height: 75vh;
+            }
+
+                main #container_for_pics {
+                    display: grid;
+                    grid:    "pic1 pic2 pic3 pic4" 30vh
+                            "pic5 pic6 pic7 pic8" 30vh /
+                            1fr 1fr 1fr 1fr;
+                }
+
+                    #container_for_pics img {
+                        display: none;
+                    }
+    
+        footer {
+            position: fixed;
+            bottom: 0px;
+        }
+}
+

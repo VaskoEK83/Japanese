@@ -1,0 +1,124 @@
+/**
+ * CONTENTS
+ *
+ * ASIDE
+ *
+ * MAIN
+ */
+
+
+
+
+
+/*------------------------------------*\
+  #ASIDE
+\*------------------------------------*/
+
+#sidebar1 {
+    background-color: hsl(20, 16%, 85%);
+}
+
+    aside h1 {
+        text-align: center;
+        margin-top: .8rem;
+    }
+
+    aside ul {
+        list-style: none;
+        padding: 1.5rem;
+        text-align: justify;
+    }
+
+#sidebar1 img, #sidebar2 img {
+    width: 80%;
+}
+
+#sidebar2 img {
+    border: 1px solid white;
+}
+
+    aside > div {
+        padding-bottom: 40px;
+    }
+
+        aside li {
+            text-align: justify;
+        }
+
+    #div_for_flag, #div_for_map {
+        text-align: center;
+    }
+
+#sidebar2 {
+    background-color: hsl(235, 16%, 75%);
+}
+
+
+
+@media only screen and (min-width: 768px) {
+        
+    aside ul {
+        width: 80vw;
+        margin-left: auto;
+        margin-right: auto;
+        font-size: 2vh;
+    }
+
+    #div_for_map img {
+        max-width: 70vw;
+    }
+
+        #div_for_flag img {
+            max-width: 50vw;
+        }
+}
+
+
+@media only screen and (min-width: 1280px) {
+    aside {
+        font-size: 1vw;
+    }
+
+    aside h1 {
+        display: none;
+    }
+
+    aside ul {
+        width: auto;
+        padding: 1.5rem;
+        text-align: justify;
+    }
+}
+
+
+
+
+
+/*------------------------------------*\
+  #MAIN
+\*------------------------------------*/
+
+main {
+    background-color: #F1F3F4;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+    main h2 {
+        display: none;
+    }
+    #slydeshow_container {
+        max-width: 900px;
+        padding: 1rem;
+    }
+
+
+@media only screen and (min-width: 1280px) {
+    main h2 {
+        display: block;
+        padding-top: .8rem;
+    }
+}

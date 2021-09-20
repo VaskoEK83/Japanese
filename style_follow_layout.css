@@ -1,0 +1,45 @@
+/**
+ * CONTENTS
+ *
+ * LAYOUT
+ * Modifiers............Media queries for the layout.
+ */
+
+
+
+
+
+/*------------------------------------*\
+  #MODIFIERS
+\*------------------------------------*/
+
+@media only screen and (max-width: 767px) {
+        main {
+            height: calc(100vh - 108px);
+        }
+}
+
+
+
+@media only screen and (min-width: 768px) {
+    body {
+        width: 100vw;
+        height: 100vh;
+        position: relative;
+    }
+        nav {
+            height: 58px;
+        }
+
+        main {
+            height: calc(100vh - 108px);
+        }
+
+        footer {
+            position: absolute;
+            bottom: 0px;
+        }
+}
+
+
+

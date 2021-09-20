@@ -1,0 +1,129 @@
+/**
+ * CONTENTS
+ *
+ * BODY, OTHERS
+ *
+ * SECTION #section_for_prologue
+ *
+ * SECTION #section_for_choosing_food
+ */
+
+
+
+
+
+ /*------------------------------------*\
+  #BODY, OTHERS
+\*------------------------------------*/
+
+body {
+    background-color: #F1F3F4;
+}
+
+        h2 {
+            font-size: 16px;
+            text-align: justify;
+            padding: 1rem;
+
+        }
+
+
+
+
+
+/*------------------------------------*\
+  #section_for_prologue
+\*------------------------------------*/
+
+        #section_for_prologue h1 {
+            text-align: center;
+            padding: 2rem;
+            margin-top: 1rem;
+        }
+
+
+
+
+
+/*------------------------------------*\
+  #section_for_choosing_food
+\*------------------------------------*/
+
+        #section_for_choosing_food a {
+            display: block;
+            margin-bottom: 1rem;
+        }
+
+            #section_for_choosing_food div {
+                width: 90vw;
+                height: calc(100vh/2);
+                border: 1px solid black;
+                border-radius: 20%;
+                
+                margin-left: auto;
+                margin-right: auto;
+            }
+
+            #sushi_pic {
+                background-image: url('assets/sushi.jpg');
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-position: center center;
+            }
+            
+            #kaiseki_pic {
+                background-image: url('assets/kaiseki.jpg');
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-position: 80% 100%;
+            }
+            
+            #udon_pic {
+                background-image: url('assets/udon.jpg');
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-position: 65% 100%;
+            }
+            
+            #soba_pic {
+                background-image: url('assets/soba.jpg');
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-position: 87% 100%;
+            }
+            
+            #tempura_pic {
+                background-image: url('assets/tempura.jpg');
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-position: center center;
+            }
+            
+            #miso_pic {
+                background-image: url('assets/miso.jpg');
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-position: center 50%;
+            }
+
+
+
+            @media only screen and (min-width: 768px) {
+                #section_for_choosing_food {
+                    text-align: center;
+                }
+
+                    #section_for_choosing_food a {
+                        display: inline;
+                        margin-bottom: 1rem;
+                    }
+                    
+                    #section_for_choosing_food div {
+                        max-width: 20vh;
+                        height: 20vh;
+                        display: inline-block;
+                    }
+            }
+
+
+

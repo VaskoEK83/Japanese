@@ -1,0 +1,74 @@
+/**
+ * CONTENTS
+ *
+ * BODY
+ *
+ * SECTION
+ */
+
+
+
+
+
+/*------------------------------------*\
+  #BODY
+\*------------------------------------*/
+
+body {
+        background-color: #F1F3F4;
+}
+
+
+
+
+
+/*------------------------------------*\
+  #SECTION
+\*------------------------------------*/
+
+    section {
+        text-align: justify;
+        padding: 1rem;
+    }
+
+        h2 {
+            font-size: 16px;
+        }
+
+        h2::first-letter {
+            font-size: 120%;
+            font-style: italic;
+        }
+
+
+        h2, .div_for_pic {
+            margin-bottom: 1rem;
+        }
+
+        .div_for_pic {
+            text-align: center;
+            max-width: 90vw;
+        }
+
+            .div_for_pic img {
+                max-width: 90vw;
+            }
+
+
+
+@media only screen and (min-width: 768px) {
+
+        .div_for_pic {
+            margin-left: auto;
+            margin-right: auto;
+        }
+}
+
+@media only screen and (min-width: 1200px) {
+    
+            .div_for_pic img {
+                max-width: 60vw;
+            }
+}
+
+

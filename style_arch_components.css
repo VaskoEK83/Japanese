@@ -1,0 +1,109 @@
+/**
+ * CONTENTS
+ *
+ * MAIN
+ */
+
+
+
+
+
+/*------------------------------------*\
+  #MAIN
+\*------------------------------------*/
+
+main {
+    background-color: #F1F3F4;
+}
+
+        main h1 {
+            padding-top: 1rem;
+        }
+
+        #section_for_pics_in_galerie h1, #section_for_pics_in_galerie p {
+            text-align: center;
+        }
+
+            #container_for_pics > div {
+                text-align: center;
+                margin-bottom: 1rem;
+            }
+
+                #container_for_pics img {
+                    width: 90vw;
+                    border-radius: 10px;
+                }
+
+        .modal {
+            padding: 2rem;
+            text-align: left;
+            text-align: justify;
+            width: 100vw;
+            height: 100vh;
+            background-color: rgba(0,0,0,.95);
+            color: white;
+            border: 1px solid #F1F3F4;
+        }
+
+
+
+@media only screen and (min-width: 768px) {
+
+            #pic1 {
+                background-image: url('assets/wood.jpg');
+                background-size: cover;
+                background-position: center center;
+                background-repeat: no-repeat;
+            }
+
+            #pic2 {
+                background-image: url('assets/roof.jpg');
+                background-size: cover;
+                background-position: center center;
+                background-repeat: no-repeat;
+            }
+
+            #pic3 {
+                background-image: url('assets/shoji.jpg');
+                background-size: cover;
+                background-position: center center;
+                background-repeat: no-repeat;
+            }
+
+            #pic4 {
+                background-image: url('assets/fusuma.jpg');
+                background-size: cover;
+                background-position: center center;
+                background-repeat: no-repeat;
+            }
+
+            #pic5 {
+                background-image: url('assets/tatami.jpg');
+                background-size: cover;
+                background-position: center center;
+                background-repeat: no-repeat;
+            }
+
+            #pic6 {
+                background-image: url('assets/engawa.jpg');
+                background-size: cover;
+                background-position: center center;
+                background-repeat: no-repeat;
+            }
+
+            #pic7 {
+                background-image: url('assets/genkan.jpg');
+                background-size: cover;
+                background-position: center center;
+                background-repeat: no-repeat;
+            }
+
+            #pic8 {
+                background-image: url('assets/nature.jpg');
+                background-size: cover;
+                background-position: center center;
+                background-repeat: no-repeat;
+            }
+}
+
+
